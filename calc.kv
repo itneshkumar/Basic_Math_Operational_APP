@@ -1,0 +1,156 @@
+<MyLayout>
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+
+        TextInput:
+            id: calc_input
+            text: "0"
+            halign: "right"
+            font_size: 65
+            size_hint:(1,.15)
+
+        GridLayout:
+            cols: 4
+            rows: 5
+
+
+            # Row
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "%"
+                bold: True
+                on_press: root.math_sign("%")
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "C"
+                bold: True
+                background_color:(1,0,0,.8)
+                on_press: root.clear()
+            Button:
+                id: clear
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: u"\u00AB"
+                bold: True
+                on_press: root.remove()
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "/"
+                bold: True
+                on_press: root.math_sign("/")
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "7"
+                bold: True
+                background_color:(125/255,0,1/250,1)
+                on_press: root.button_press(7)
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "8"
+                bold: True
+                background_color:(125/255,0,1/250,1)
+                on_press: root.button_press(8)
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "9"
+                bold: True
+                background_color:(125/255,0,1/250,1)
+                on_press: root.button_press(9)
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "X"
+                bold: True
+                on_press: root.math_sign("*")
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "4"
+                bold: True
+                background_color:(125/255,0,1/250,1)
+                on_press: root.button_press(4)
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "5"
+                bold: True
+                background_color:(125/255,0,1/250,1)
+                on_press: root.button_press(5)
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "6"
+                bold: True
+                background_color:(125/255,0,1/250,1)
+                on_press: root.button_press(6)
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "-"
+                bold: True
+                on_press: root.math_sign("-")
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "1"
+                bold: True
+                background_color:(125/255,0,1/250,1)
+                on_press: root.button_press(1)
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "2"
+                bold: True
+                background_color:(125/255,0,1/250,1)
+                on_press: root.button_press(2)
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "3"
+                bold: True
+                background_color:(125/255,0,1/250,1)
+                on_press: root.button_press(3)
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "+"
+                bold: True
+                on_press: root.math_sign("+")
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "+/-"
+                bold: True
+                background_color:(125/255,0,1/250,1)
+                on_press: root.pos_neg()
+
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "0"
+                bold: True
+                background_color:(125/255,0,1/250,1)
+                on_press: root.button_press(0)
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "."
+                bold: True
+                background_color:(125/255,0,1/250,1)
+                on_press: root.dot()
+
+            Button:
+                size_hint: (0.2,.2)
+                font_size: 45
+                text: "="
+                bold: True
+                on_press: root.equals()
+
+
