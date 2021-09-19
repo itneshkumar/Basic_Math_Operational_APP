@@ -18,7 +18,12 @@ Windows Executable folder
 
 Go to Calc folder unzip them and run the calc.exe file
 
-## Wireframe of APP
+### wireframe of APP
+Android
+<img src="Android.png" width="100"/>
+</br>
+Windows
+<img src="Windows.png" width="100"/>
 
 
 ## License
