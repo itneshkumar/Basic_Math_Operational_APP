@@ -1,8 +1,7 @@
 
 # Kivy app in Android and Windows
 
-This app is builted for learning perpuse and use to solve the basics Mathematical operation,
-In future I will apply same concept to built the App integrated to **Machine Learning** concept
+This app is built for learning purposes and use to solve the basics of Mathematical operations, In future, I will apply the same concept to build the App integrated to **Machine Learning** concept
 
 ## Authors
 
